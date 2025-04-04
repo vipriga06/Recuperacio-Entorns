@@ -1,0 +1,12 @@
+65e11f4c-e2b5-415b-8e49-815d6d877e5b:1743808552320:2:S:alter session set "_ORACLE_SCRIPT" = true;
+bf55fa3f-ddb7-4813-8b4c-79e58b8c3317:1743808552423:0:F:create or replace user victor identified by victor123;
+27c1729a-ffac-4e48-bfd4-08038da11185:1743808552544:22:S:grant all privileges to victor;
+59259235-f923-41b0-a533-bf4a32d9362f:1743808574223:2:S:alter session set "_ORACLE_SCRIPT" = true;
+30b8e0da-1f79-4569-bfd5-0de2c5d922a5:1743808574298:0:F:create  user victor identified by ******;
+d6870168-b690-417b-8bd6-a0e5595b54e5:1743808574391:18:S:grant all privileges to victor;
+f15dc159-6d90-4b54-93e8-9bcdf74c3cc4:1743808589930:3:S:alter session set "_ORACLE_SCRIPT" = true;
+c5c4c351-a9ce-4e29-b82e-00145fa80a24:1743808589998:14:S:create  user root identified by ******;
+8d72d960-657d-47ba-912f-6204772e4133:1743808590073:17:S:grant all privileges to victor;
+3a267cef-5358-4458-a175-b8696eb8afa2:1743808596677:2:S:alter session set "_ORACLE_SCRIPT" = true;
+89457c09-1a3b-4467-9f78-b26555c9a50c:1743808596751:0:F:create  user root identified by ******;
+0418a9a4-f796-4615-bf41-8a0672ce736f:1743808596841:27:S:grant all privileges to root;
