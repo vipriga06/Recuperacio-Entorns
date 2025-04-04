@@ -1,4 +1,4 @@
-# Debug (depurar)
+# Debug en Java (Victor Prieto)
 
 **Debug** és el procés de trobar i corregir errors del codi. D'aquest procés en diem **depuració**.
 

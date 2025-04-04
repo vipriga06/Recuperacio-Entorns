@@ -1,256 +1,88 @@
-# Git
+# Git amb Entorn Gràfic
 
-<center>
-<img src="./assets/git.png" style="width: 350px; max-width: 350px">
-</center>
+Git és una eina molt potent per al control de versions i, tot i que es fa servir principalment des de la línia de comandaments, hi ha eines gràfiques que fan que treballar amb Git sigui molt més accessible. En aquest document, veurem com gestionar alguns dels aspectes més importants de Git mitjançant una interfície gràfica: *commits*, *branches*, *merge*, *stash* i *historial*.
 
-Un projecte **Git** guarda l'historial de canvis d'un projecte i permet la col·laboració de diversos desenvolupadors.
+## 1. Commits
 
-- **GitHub** és una plataforma web, que permet treballar amb projectes **Git**
+Un *commit* en Git és una instantània dels canvis realitzats al teu projecte. És el punt on els canvis es guarden al repositori.
 
-- **GitHub Desktop** és una eina que permet gestionar projectes GitHub de manera gràfica.
+### Com fer un commit en una interfície gràfica:
+- **Pas 1**: Realitza els canvis als arxius del teu projecte.
+- **Pas 2**: Obre la teva eina gràfica (per exemple, **GitKraken**, **SourceTree** o **Git GUI**).
+- **Pas 3**: Veureu els canvis realitzats a la teva àrea de treball. Selecciona els arxius que vols incloure al commit.
+- **Pas 4**: Escriu un missatge descriptiu del commit al camp corresponent.
+- **Pas 5**: Fes clic al botó de "Commit" o "Commit Changes".
 
-## Projecte de prova
+### Consells:
+- Escriu sempre missatges de commit clars i descriptius.
+- Intenta fer commits petits i freqüents per mantenir un historial net.
 
-Fes un projecte al teu compte de GitHub anomenat 'HelloGit'
+---
 
-- Ves a [GitHub](https://github.com/)
-- Pestanya **Repositories**
-- Botó **New**
-- Repository name: HelloGit
-- Create repository
+## 2. Branches (Rames)
 
-Amb l'aplicació **GitHub Desktop** importa el repositori que acabes de crear:
+Les branques en Git permeten treballar en diferents línies de desenvolupament de manera paral·lela. Això és útil per treballar en noves característiques, corregir errors o experimentar sense afectar la branca principal (*main* o *master*).
 
-- File > Clone Repository
-- Busca 'HelloGit'
-- Botó **Clone**
+### Com crear una branca en una interfície gràfica:
+- **Pas 1**: Obre la teva eina gràfica de Git.
+- **Pas 2**: Cerca l'opció "Branch" o "Nova Branca".
+- **Pas 3**: Introdueix un nom per la nova branca.
+- **Pas 4**: Crea la branca i canvia automàticament a ella.
 
-Obre aquest projecte amb **Visual Studio Code**, i posa-hi un nou arxiu:
+### Consells:
+- Nomena les teves branques de manera clara, per exemple: `feature/nova-caracteristica` o `bugfix/correccio-error`.
+- Utilitza branques per cada tasca o característica en què estiguis treballant.
 
-```text
-helloGit.py
-```
+---
 
-**Nota**: Veuràs que el nom de l'arxiu apareix de color verd, això vol dir que és un arxiu nou que no està al Git remot.
+## 3. Merge (Fusionar)
 
-Edita l'arxiu per fer un 
+El *merge* és el procés de combinar els canvis de diferents branques en una sola. Es fa normalment quan vols integrar una branca de característiques de nou a la branca principal.
 
-```python
-print("Hello Git!")
-```
+### Com fer un merge en una interfície gràfica:
+- **Pas 1**: Canvia a la branca en la qual vols fer el merge (per exemple, `main`).
+- **Pas 2**: Cerca l'opció "Merge" o "Fusionar" a la teva eina gràfica.
+- **Pas 3**: Selecciona la branca que vols fusionar amb la branca actual.
+- **Pas 4**: Git resoldrà els canvis i, si tot va bé, farà el merge automàticament. Si hi ha conflictes, hauràs de resoldre'ls manualment.
 
-<center>
-<img src="./assets/git0000.png" style="width: 90%; max-width: 350px">
-</center>
 
-Si vas a GitHub Desktop, veuràs que apareix una modificació a la pestanya "Changes". Que és el nou arxiu que has creat.
 
-Ara pots pujar aquest codi a GitHub. 
+---
 
-## Primer commit
+## 4. Stash (Emmagatzematge Temporal)
 
-**Nota:** Com que encara no has enviat res d'aquest projecte a GitHub, el botó **Publish branch** diu: *"Cannot publish unborn HEAD"*
+El *stash* en Git et permet guardar canvis temporals sense comprometre'ls, per poder treballar en una altra cosa i després tornar a aquests canvis més tard.
 
-Per enviar modificacions a GitHub cal fer un commit, i per fer un commit cal explicar què estàs enviant.
+### Com utilitzar el stash en una interfície gràfica:
+- **Pas 1**: Obre la teva eina gràfica de Git.
+- **Pas 2**: Fes clic a l'opció "Stash" o "Emmagatzemar canvis".
+- **Pas 3**: Git emmagatzemarà els canvis no compromesos en un lloc segur.
+- **Pas 4**: Quan estiguis llest per continuar treballant en aquests canvis, simplement selecciona "Pop" o "Aplicar Stash" des de la interfície gràfica.
 
-- Posa una descripció dels canvis que has fet a l'apartat "Commit"
-- Apreta el botó **Commit to main**
 
-<center>
-<img src="./assets/git0001.png" style="width: 90%; max-width: 250px">
-</center>
+---
 
-Com que és la primera vegada que enviem modificacins a aquest projecte, hem de publicar la branca:
+## 5. Historial de Commits
 
-- Apreta a 'Publish branch'
+L'historial de commits et permet veure els canvis realitzats al teu projecte al llarg del temps. Pots accedir a l'historial per veure quan i què canvis es van fer.
 
-<center>
-<img src="./assets/git0002.png" style="width: 90%; max-width: 250px">
-</center>
+### Com veure l'historial en una interfície gràfica:
+- **Pas 1**: Obre la teva eina gràfica de Git.
+- **Pas 2**: Cerca l'opció "Historial" o "Log".
+- **Pas 3**: Podràs veure una llista dels commits realitzats, amb els seus missatges de commit i les diferències entre ells.
+- **Pas 4**: Pots fer clic en qualsevol commit per veure més detalls, com els arxius modificats i les diferències.
 
-Torna a *Visual Studio Code* i modifica l'arxiu, deixa'l així:
 
-```python
-print("Hello Git!")
-print("New modification")
-```
 
-Veuràs que ara el nom de l'arxiu surt de color marró clar, això indica que hi has fet modificacions.
+---
 
-<center>
-<img src="./assets/git0003.png" style="width: 90%; max-width: 250px">
-</center>
+## Conclusió
 
-- Torna a GitHub Desktop, i apunta el comentari de la nova modificació.
-- Apreta el botó **Commit to main**
+L'ús d'eines gràfiques per treballar amb Git pot fer que sigui molt més fàcil i accessible gestionar el teu repositori, especialment si ets nou a Git o prefereixes una interfície visual en lloc de la línia de comandaments. Tot i això, els comandaments de Git sempre estan disponibles per un control més precís i per a casos més avançats.
 
-<center>
-<img src="./assets/git0004.png" style="width: 90%; max-width: 250px">
-</center>
+Al familiaritzar-te amb conceptes com commits, branques, merges, stashes i historial, tindràs les eines necessàries per gestionar els teus projectes de manera eficient i efectiva.
 
-Ara pots enviar els canvis a GitHub apretant el botó 'Push origin'
-
-<center>
-<img src="./assets/git0005.png" style="width: 90%; max-width: 250px">
-</center>
-
-## Veure commits a GitHub
-
-Amb el navegador, al projecte de GitHub, pots veure els commits que s'han fet per aquest codi.
-
-- Apreta sobre la opció **Commits** de la web de GitHub:
-
-<center>
-<img src="./assets/git0006.png" style="width: 90%; max-width: 250px">
-</center>
-
-Veuràs una llista amb els commits d'aquest projecte.
-
-- Escull un dels commits:
-
-<center>
-<img src="./assets/git0007.png" style="width: 90%; max-width: 250px">
-</center>
-
-Veuràs els canvis del commit.
-
-- En vermell el què s'ha tret
-- En verd el què s'ha afegit
-
-## Commits des de Visual Studio Code
-
-Des de **Visual Studio Code**, també pots fer commits.
-
-Modifica l'arxiu 'helloGit.py' així:
-
-```python
-print("Hello Git!")
-print("Git from VSC")
-```
-
-A la pestanya **Source Control** veuràs que apareix un número 1 (un arxiu amb canvis), i una llista 'Changes' amb l'arxiu que té modificacions (helloGit.py).
-
-<center>
-<img src="./assets/git0008.png" style="width: 90%; max-width: 250px">
-</center>
-
-Si sel·lecciones l'arxiu, veuràs dues columnes, una amb la versió anterior de l'arxiu i una amb la nova.
-
-Igualment, les parts que s'han esborrat estàn en vermell i les noves en verd.
-
-<center>
-<img src="./assets/git0009.png" style="width: 90%; max-width: 250px">
-</center>
-
-Podries desfer els canvis amb la fletxa "enrrera" que diu "Discard Changes", però no ho facis.
-
-Posa un comentari amb el canvi a l'espai **Message**
-
-<center>
-<img src="./assets/git0010.png" style="width: 90%; max-width: 250px">
-</center>
-
-I apreta el botó **Commit**
-
-Igual que amb l'aplicació **GitHub Desktop** després de fer un commit, habies d'enviar els canvis amb **Publish Branch**, des de **Visual Studio Code** has de publicar els canvis amb **Sync Changes**
-
-<center>
-<img src="./assets/git0011.png" style="width: 90%; max-width: 250px">
-</center>
-
-## Commits des de la terminal
-
-Des de la linia de comandes també pots fer commits.
-
-Modifica l'arxiu 'helloGit.py' així:
-
-```python
-print("Hello Git!")
-print("Git from CMD")
-```
-
-Obre un terminal i escriu:
-
-```bash
-git status
-```
-
-<center>
-<img src="./assets/git0012.png" style="width: 90%; max-width: 250px">
-</center>
-
-Aquesta comanda llista l'estat del projecte Git, en aquest cas ens diu que hem modificat l'arxiu 'helloGit.py'
-
-Podriem veure les modificacions que s'hi han fet amb:
-
-```bash
-git diff helloGit.py
-```
-
-<center>
-<img src="./assets/git0013.png" style="width: 90%; max-width: 250px">
-</center>
-
-Igualment, amb vermell surt el què hem esborrat i amb verd el què hem afegit.
-
-Com que els canvis no s'han enviat, ni s'ha fet cap commit, podriem descartar els canvis amb la següent comanda, **però no ho facis**:
-
-```bash
-git checkout -- helloGit.py
-```
-
-Per enviar els canvis des de la linia de comandes:
-
-- Primer cal afegir els arxius que volem commentar:
-
-```bash
-git add helloGit.py
-```
-
-- O bé, per afegir tots els arxius amb modificacions:
-
-```bash
-git add .
-```
-
-- Després, cal posar el commentari. Es posa entre commetes després de **"-m"**
-
-```bash
-git commit -m "Modified VSC for CMD"
-```
-
-- Finalment, per enviar-ho al servidor tal i com fem visualment amb *Publish Branch*, o *Sync changes*, cal fer un **push**:
-
-```bash
-git push
-```
-
-<center>
-<img src="./assets/git0014.png" style="width: 90%; max-width: 250px">
-</center>
-
-## Actualitzar les dades amb linia de comandes
-
-Per actualitzar els arxius locals, amb les modificacions remotes:
-
-```bash
-git pull
-```
-
-Per, a més esborrar arxius i carpetes que ja no existeixen en remot:
-
-```bash
-git fetch --prune
-git stash
-git pull
-git stash clear
-```
-
-## Historial de modificacions a GitHub Desktop
-
-La pestanya **History** de *GitHub Desktop* també ens mostra l'historial de modificacions.
-
-<center>
-<img src="./assets/git0014.png" style="width: 90%; max-width: 250px">
-</center>
+### Eines recomanades:
+- **GitKraken**: Una eina gràfica popular i fàcil d'usar.
+- **SourceTree**: Una opció gratuïta d'Atlassian, també molt completa.
+- **Git GUI**: L'eina gràfica oficial que ve amb Git.
