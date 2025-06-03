@@ -1,3 +1,7 @@
+**Victor Prieto**  
+**AMS1**  
+**6/6/2025** 
+
 # Git amb Entorn Gràfic
 
 Git és una eina molt potent per al control de versions i, tot i que es fa servir principalment des de la línia de comandaments, hi ha eines gràfiques que fan que treballar amb Git sigui molt més accessible. En aquest document, veurem com gestionar alguns dels aspectes més importants de Git mitjançant una interfície gràfica: *commits*, *branches*, *merge*, *stash* i *historial*.
