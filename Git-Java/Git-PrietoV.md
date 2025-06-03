@@ -83,6 +83,8 @@ L'ús d'eines gràfiques per treballar amb Git pot fer que sigui molt més fàci
 Al familiaritzar-te amb conceptes com commits, branques, merges, stashes i historial, tindràs les eines necessàries per gestionar els teus projectes de manera eficient i efectiva.
 
 ### Eines recomanades:
+
+- **Github Desktop**: L'eina gràfica oficial de github.
 - **GitKraken**: Una eina gràfica popular i fàcil d'usar.
 - **SourceTree**: Una opció gratuïta d'Atlassian, també molt completa.
-- **Git GUI**: L'eina gràfica oficial que ve amb Git.
+
