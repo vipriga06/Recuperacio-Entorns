@@ -80,11 +80,6 @@ L'historial de commits et permet veure els canvis realitzats al teu projecte al 
 
 ---
 
-## Conclusió
-
-L'ús d'eines gràfiques per treballar amb Git pot fer que sigui molt més fàcil i accessible gestionar el teu repositori, especialment si ets nou a Git o prefereixes una interfície visual en lloc de la línia de comandaments. Tot i això, els comandaments de Git sempre estan disponibles per un control més precís i per a casos més avançats.
-
-Al familiaritzar-te amb conceptes com commits, branques, merges, stashes i historial, tindràs les eines necessàries per gestionar els teus projectes de manera eficient i efectiva.
 
 ### Eines recomanades:
 
